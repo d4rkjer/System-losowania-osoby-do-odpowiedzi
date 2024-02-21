@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="System_losowania_osoby_do_odpowiedzi.MainPage">
+
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="System losowania osoby do odpowiedzi" HorizontalOptions="Center" VerticalOptions="Center" StyleClass="title"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <ContentPage.Resources>
+        <StyleSheet Source="global.css" />
+    </ContentPage.Resources>
+
+    <StackLayout Padding="20">
+
+        <Entry x:Name="classEntry" Placeholder="Enter class name" Margin="0,0,0,10"/>
+        <Button x:Name="addClassButton" Text="Add Class" Clicked="AddClassButton_Clicked" StyleClass="addButton" />
+
+        <Picker x:Name="classPicker" Title="Select class" Margin="0,20,0,10"/>
+
+        <Entry x:Name="studentEntry" Placeholder="Enter student name" Margin="0,0,0,10"/>
+        <Button x:Name="addStudentButton" Text="Add Student" Clicked="AddStudentButton_Clicked" StyleClass="addButton" />
+
+        <Button x:Name="pickButton" Text="Pick Student" Clicked="PickStudentButton_Clicked" Margin="0,20,0,0" StyleClass="addButton pickButton" />
+
+        <Label x:Name="studentsListLabel" Text="" FontSize="16" Margin="0,20,0,0" StyleClass="label" />
+    </StackLayout>
+
+</ContentPage>

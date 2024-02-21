@@ -1,0 +1,30 @@
+﻿/* Modyfikacja paska tytułowego aplikacji */
+Label.title {
+    color: #ffcc00;
+    font-size: 32;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Wykorzystanie selektora "^" */
+Button.addButton {
+    background-color: #27ae60;
+    color: #ffffff;
+    font-size: 18;
+    font-weight: bold;
+}
+
+/* Wykorzystanie selektora bezpośrednich elementów podrzędnych */
+Button#pickButton {
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 18;
+    font-weight: bold;
+}
+
+Label.label {
+    color: #34495e;
+    font-size: 16;
+    font-weight: bold;
+}
